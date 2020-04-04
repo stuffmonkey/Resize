@@ -38,8 +38,8 @@ set appWidth to 1277
 tell application \"$A\"
 	activate
 	reopen
-	set yAxis to \"$yPos\" as integer
-	set xAxis to \"$xPos\" as integer
+	set yAxis to \"$yPos\"
+	set xAxis to \"$xPos\"
 	set the bounds of the first window to {xAxis, yAxis, appWidth + xAxis, appHeight + yAxis}
 end tell
 tell application \"Terminal\"
